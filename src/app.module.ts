@@ -16,10 +16,10 @@ import { envs } from './common/envs.common';
       useFactory: (configService: ConfigService) => ({
         fallbackLanguage: configService.get(envs.DEFAULT_LANGUAGE),
         loaderOptions: {
-          path: join(__dirname, '/i18n/'),
+          path: join(__dirname, '../i18n/'),
           watch: true,
         },
-        typesOutputPath: join(__dirname, '../src/generated/i18n.generated.ts'),
+        typesOutputPath: join(__dirname, '../src/generated/i18n.generated.js'),
       }),
       resolvers: [new HeaderResolver(['x-lang'])],
       inject: [ConfigService],
