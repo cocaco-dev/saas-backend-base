@@ -1,0 +1,6 @@
+export const envs = {
+  PORT: 'PORT',
+  ENV: 'ENV',
+  DEFAULT_LANGUAGE: 'DEFAULT_LANGUAGE',
+  DATABASE_URL: 'DATABASE_URL',
+};
