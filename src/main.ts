@@ -10,7 +10,7 @@ async function bootstrap() {
   app.enableCors();
   if (configService.get(envs.ENV) !== 'production') {
     const config = new DocumentBuilder()
-      .setTitle('BASE SASS BACKEND')
+      .setTitle('BASE SASS BACKEND SERVER')
       .setVersion('1.0')
       .build();
 
